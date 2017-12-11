@@ -1,0 +1,28 @@
+API
+1. Franchisee kurang status
+2. Get myevent belum ada
+2. Edit myfranchise belum ada. Jikalau uda buat, ketika franchisor ada edit franchisenya baik dari sisi detailfranchise ataupun legaldoc. Maka dari otomatis statusnya jadi pending
+3. Edit user belum ada
+4. Delete myfranchise belum ada.
+5. Get franchisee yang dibuat franchisor (myfranchisee) belum ada. Sekaligus buat edit franchisee dan delete franchisee
+6. Brochure ditampilakan berdasarkan yang terbaru
+7. Delete mybrochure belum ada
+8. Event belum ada
+9. Barcode belum ada
+10. 
+
+
+Bug
+1. Pada bagian upload doc, brochure. Image nya ketika di klik tidak bisa full image
+2. Edit profile masih ada bug, ketika foto nya gak di ganti. Maka otomatis error
+
+
+API yang belum siap
+1. Review and rating
+
+
+
+Improvement (untuk TA)
+1. Jikalau sudah register, status user dibuat pending. Dan dikirimkan email verifikasi sesuai dengan email yang diregister. Setelah maka status user dibuat jadi verified
+2. 
+
