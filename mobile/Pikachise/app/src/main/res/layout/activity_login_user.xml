@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/userlogin.container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="20dp"
+    android:paddingLeft="35dp"
+    android:paddingRight="35dp"
+    android:paddingTop="20dp"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true">
+    <ImageView
+        android:layout_width="120sp"
+        android:layout_height="120sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/logo" />
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/loginuser.layoutEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/loginuser.Email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_email"
+            android:inputType="text"
+            android:maxLines="1"
+            android:theme="@style/AppTheme.LoginRegister"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/loginuser.layoutPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/loginuser.Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_password"
+            android:inputType="textPassword"
+            android:maxLength="15"
+            android:maxLines="1"
+            android:theme="@style/AppTheme.LoginRegister" />
+    </android.support.design.widget.TextInputLayout>
+    <Button
+        android:id="@+id/loginuser.login"
+        android:text="@string/login"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/buttonloginuser"/>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <View
+            android:layout_gravity="center_vertical"
+            android:layout_width="100dp"
+            android:layout_height="1dp"
+            android:background="@color/grey"/>
+        <TextView
+            android:textSize="14sp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/or"/>
+        <View
+            android:layout_gravity="center_vertical"
+            android:layout_width="100dp"
+            android:layout_height="1dp"
+            android:background="@color/grey"/>
+    </LinearLayout>
+    <TextView
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/loginuser.createaccount"
+        android:text="@string/createaccount"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"/>
+</LinearLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:id="@+id/edituser_container">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/edituser_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="Edit User"
+        android:background="@color/colorPrimary"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_gravity="center"
+                android:id="@+id/edituser_imageprofile"
+                android:src="@drawable/banner1"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+                <TextView
+                    android:layout_gravity="center"
+                    android:id="@+id/edituser_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="18sp"
+                    android:text="Your Email"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/edituser_layoutname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edituser_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Your Name"/>
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/edituser_layoutaddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edituser_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Your Address"/>
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/edituser_layoutphonenumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edituser_phonenumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Your Phonenumber"
+                android:inputType="phone"/>
+        </android.support.design.widget.TextInputLayout>
+        <Button
+            android:id="@+id/edituser_changepassword"
+            android:text="Click here to reset password"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/buttonloginuser"/>
+    </LinearLayout>
+
+</LinearLayout>

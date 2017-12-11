@@ -1,0 +1,29 @@
+<android.support.v4.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/brochure_swiperefreshlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/brochure_nestedscrollview"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_marginTop="200dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/nullfranchisebrochure"
+                android:gravity="center"
+                android:textSize="24sp" />
+        </android.support.v4.widget.NestedScrollView>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/brochure_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+    </LinearLayout>
+</android.support.v4.widget.SwipeRefreshLayout>

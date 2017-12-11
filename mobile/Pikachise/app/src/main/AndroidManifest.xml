@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.asus.pikachise">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/MyTheme">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBlfWmB_-jsO68zE4hK__gpPIc-cAp86Vg" />
+
+        <activity
+            android:name=".view.home.activity.MainActivity"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".view.home.activity.IntroActivity" />
+        <activity
+            android:name=".view.home.activity.Splashscreen"
+            android:theme="@style/Splashtheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.franchisedetail.activity.FranchiseDetail"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".view.news.activity.DetailNews"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".view.event.activity.DetailEvent" />
+        <activity
+            android:name=".view.event.eventbarcode.Barcode"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".view.authentication.LoginUser"
+            android:theme="@style/AppTheme.LoginRegister" />
+        <activity
+            android:name=".view.authentication.RegisterUser"
+            android:theme="@style/AppTheme.LoginRegister" />
+        <activity android:name=".view.myfranchise.activity.Requirements" />
+        <activity
+            android:name=".view.authentication.EditUser"
+            android:theme="@style/MyTheme.EditUser" />
+        <activity android:name=".view.search.activity.Search" />
+        <activity android:name=".view.myfranchise.activity.MyFranchiseActivity" />
+        <activity android:name=".fakeproject.Loginfake" />
+        <activity android:name=".fakeproject.Registerfake" />
+        <activity android:name=".fakeproject.Mainfake" />
+        <activity android:name=".view.myfranchise.activity.DetailMyFranchise" />
+        <activity
+            android:name=".view.myfranchise.activity.DetailMyFranchiseEdit"
+            android:theme="@style/MyTheme.EditUser" />
+        <activity
+            android:name=".view.myfranchise.activity.DetailMyFranchiseBrochure"
+            android:theme="@style/MyTheme.EditUser" />
+        <activity
+            android:name=".view.myfranchise.activity.DetailMyFranchiseFranchisee"
+            android:theme="@style/MyTheme.EditUser" />
+        <activity
+            android:name=".view.myfranchise.activity.DetailMyFranchiseReview"
+            android:theme="@style/MyTheme.EditUser" />
+        <activity
+            android:name=".view.myfranchise.activity.DetailMyFranchiseFavorite"
+            android:theme="@style/MyTheme.EditUser" />
+        <activity android:name=".view.myfranchise.activity.AddPicture" />
+        <activity android:name=".view.myfranchise.activity.AddFranchisee" />
+        <activity android:name=".presenter.helper.PermissionActivity" />
+        <activity
+            android:name=".view.myfranchise.activity.RegisterFranchise"
+            android:theme="@style/MyTheme.EditUser" />
+        <activity android:name=".view.myfranchise.activity.UploadLegalDoc" />
+        <activity android:name=".view.myfranchise.activity.LegalDoc" />
+        <activity android:name=".view.franchiselist.listall.AllCategory" />
+        <activity
+            android:name=".view.authentication.Error401"
+            android:theme="@style/Splashtheme" />
+        <activity android:name=".view.myfranchise.activity.PendingDetailMyFranchise" />
+        <activity android:name=".view.authentication.Success200" />
+
+        <activity android:name=".view.franchisedetail.activity.Daftaroutletmaps"></activity>
+        <activity android:name=".view.myfranchise.activity.getFromMaps" />
+        <activity android:name=".view.authentication.ChangePassword" />
+        <activity android:name=".view.myfranchise.activity.EditFranchisee" />
+        <activity android:name=".view.myfranchise.activity.AddEvent" />
+        <activity android:name=".view.myfranchise.activity.DetailMyFranchiseEvent"></activity>
+    </application>
+
+</manifest>

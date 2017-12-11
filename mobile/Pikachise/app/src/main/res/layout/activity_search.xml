@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/search.toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="Pikachise Market"
+        android:background="@color/colorPrimary"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/search.textview"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/nullfranchise"
+            android:visibility="invisible"
+            android:textSize="24sp"/>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/search.recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"/>
+    </RelativeLayout>
+</LinearLayout>

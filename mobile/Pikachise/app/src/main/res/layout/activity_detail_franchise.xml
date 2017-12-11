@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:id="@+id/detailfranchise.appbar">
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="280dp"
+            android:id="@+id/detailfranchise.collaptoolbar"
+            android:fitsSystemWindows="true"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
+            app:titleEnabled="false">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_collapseMode="parallax">
+                <ImageView
+                    android:id="@+id/detailfranchise.banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:scaleType="fitXY"
+                    app:layout_collapseMode="parallax"
+                    android:src="@drawable/banner1"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:alpha="0.5"
+                    android:background="@android:color/black"
+                    android:fitsSystemWindows="true"/>
+                <ImageView
+                    android:id="@+id/shadow"
+                    android:layout_marginTop="-2dp"
+                    android:layout_marginBottom="-2dp"
+                    android:layout_marginLeft="-2dp"
+                    android:layout_marginRight="-2dp"
+                    android:layout_alignTop="@+id/detailfranchise.logo"
+                    android:layout_alignBottom="@+id/detailfranchise.logo"
+                    android:layout_alignStart="@+id/detailfranchise.logo"
+                    android:layout_alignEnd="@+id/detailfranchise.logo"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/circle"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/detailfranchise.logo"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_above="@+id/linearLayout"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="15dp"
+                    android:src="@drawable/user" />
+
+                <ImageView
+                    android:id="@+id/detailfranchise.mail"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignBottom="@+id/favoriteshadow"
+                    android:layout_toEndOf="@+id/detailfranchise.call"
+                    android:src="@drawable/circleemail" />
+
+                <ImageView
+                    android:id="@+id/detailfranchise.call"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignTop="@+id/detailfranchise.mail"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/circlecall" />
+
+                <ImageView
+                    android:id="@+id/favoriteshadow"
+                    android:layout_marginTop="-10dp"
+                    android:layout_marginBottom="-10dp"
+                    android:layout_marginLeft="-10dp"
+                    android:layout_marginRight="-10dp"
+                    android:layout_alignTop="@+id/detailfranchise.favorited"
+                    android:layout_alignBottom="@+id/detailfranchise.favorited"
+                    android:layout_alignStart="@+id/detailfranchise.favorited"
+                    android:layout_alignEnd="@+id/detailfranchise.favorited"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/circlegold"/>
+
+                <ImageView
+                    android:id="@+id/detailfranchise.favorited"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignBottom="@+id/detailfranchise.logo"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginBottom="19dp"
+                    android:layout_marginEnd="15dp"
+                    android:src="@drawable/unfavorite" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="30dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_marginTop="-5dp"
+                            android:id="@+id/detailfranchise.namefranchise"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Nama Franchise"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp">
+                            <ImageView
+                                android:id="@+id/detailfranchise.averagerating"
+                                android:layout_width="150dp"
+                                android:layout_height="35dp"
+                                android:layout_marginTop="-10dp"
+                                android:src="@drawable/star5"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/detailfranchise.toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_above="@+id/shadow"
+                android:layout_gravity="top"
+                android:layout_toEndOf="@+id/detailfranchise.call"
+                app:layout_collapseMode="pin" />
+        </android.support.design.widget.CollapsingToolbarLayout>
+        <android.support.design.widget.TabLayout
+            android:id="@+id/detailfranchise.tablayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:tabTextColor="@color/black"
+            app:tabIndicatorColor="@color/colorPrimary"
+            app:tabSelectedTextColor="@color/colorPrimary"
+            app:tabMode="fixed"/>
+    </android.support.design.widget.AppBarLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/detailfranchise.viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+</android.support.design.widget.CoordinatorLayout>
